@@ -18,7 +18,10 @@ def swap_elements(array)
 end
 
 def swap_elements_from_to(array, index, destination_index)
-  array[index, destination_index].reverse
+  first = array[index]
+  second = array[destination_index]
+  array[index] = second
+  array[destination_index] = first
   array
 end
 
